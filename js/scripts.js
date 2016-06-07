@@ -10,7 +10,6 @@ var primeSifter = function(number) {
         all.splice(i, 1)
     }
   }
-
   return all;
 }
 
@@ -21,7 +20,7 @@ $(document).ready(function(){
     var input = ($("input#input-string").val());
     var result = primeSifter(input);
     $(".output").text(result);
-    $("#result").show();
+    // $("#result").show();
     event.preventDefault();
 
   });
